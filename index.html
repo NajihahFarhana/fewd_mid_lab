@@ -19,23 +19,34 @@
     <header class="rover-header-container">
 
       <ul class="rover-header-container">
-        <section class="rover-header-left"></section>
-          <li><a href="#"> <img src="img/logo.png" alt="logo" id="brand"></a></li>
-          <li><a href="#" id="searchsitters">Search Sitters</a></li>
-          <li><a href="#" id="becomesitters">Become A Sitters</a></li>
-          <li><a href="#" id="ourservices">Our Services</a></li>
-        </section>
+        <li><a href="#"> <img src="img/logo.png" alt="logo" id="brand"></a></li>
+          <section class="rover-header-left" media="(max-width:800px)">
+            <li><a href="#" id="searchsitters">Search Sitters</a></li>
+            <li><a href="#" id="becomesitters">Become A Sitters</a></li>
+            <li><a href="#" id="ourservices">Our Services</a></li>
+          </section>
         <section class="rover-header-right">
-          <li style="float:right"><a href="#" id="signup">Sign Up</a></li>
-          <li style="float:right"><a href="#" id="signin">Sign In</a></li>
-          <li style="float:right"><a href="#" id="help">Help</a></li>
-          <li><img src="img/hamburger.svg" alt="hamburger-icon" media="(min-width:800px)" class="rover-header-right-mobile"></li>
-      </section>
+          <li style="float:right" media="(max-width:800px)"><a href="#" id="signup">Sign Up</a></li>
+          <li style="float:right" media="(max-width:800px)"><a href="#" id="signin">Sign In</a></li>
+          <li style="float:right" media="(max-width:800px)"><a href="#" id="help">Help</a></li>
+          <div class="hamburger">
+            <li><a href="#"><img src="img/hamburger.svg" alt="hamburger-icon" media="(min-width:800px)" class="rover-header-right-mobile"></li></a>
+          </div>
+        </section>
     </ul>
     </header>
 
+    <div id="mobile_menu" class="mobile-menu">
+      <nav class="nflex">
+          <a href="#">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <button id="close">X</button>
+      </nav>
+  </div>
+
     <!--Rover Hero Container-->
-    <section class="rover-hero-container" media="(-width: 800px")>
+    <section class="rover-hero-container" media="(max-width: 800px")>
       <div class="container-upper">
       <h1 class="rover-hero-title">We're the Dog People</h1>
       <h3>Book trusted, local pet sitters and <br> walkers who will care for your dog <br> or cat like you would.</h3><br>
@@ -87,7 +98,7 @@
           </div>
         </section>
 
-        <section class="rover-cta-box">
+        <section class="rover-cta-box" media="(max-width: 800px)">
           <div class="rover-cta-container">
             <header class="rover-cta-header">
               <img src="img/shield.png" alt="shield icon">
@@ -107,8 +118,28 @@
       </section>
     </section>
 
+    <section class="rover-cta-box-mobile" media="(min-width: 800px)">
+      <div class="rover-cta-container-mobile">
+        <header class="rover-cta-header-mobile">
+          <img src="img/shield.png" alt="shield icon">
+          <p>Rover accepts less than 20% of potential sitters</p>
+        </header>
+        <div class="rover-cta-bottom-container-mobile">
+          <ul class="rover-facts-mobile">
+            <li>All new sitters pass a basic background check</li>
+            <li>All sitters provide a detailed profile and personal information</li>
+            <li>All sitters are approved by our team of sitter specialists</li>
+          </ul>
+          <div class="rover-cta-mobile"><a href="#">Book your next Rover sitter</a></div>
+        </div>
+      </div>
+      <p class="rover-protections-mobile">All services booked on Rover are backed by the Rover Guarantee, 24/7 Support, Photo Updates, and our <a href="#">Reservation Protection</a>.</p>
+    </section>
+  </section>
+</section>
+
     <!--Rover action-->
-    <section class="rover-action-shot">
+    <section class="rover-action-shot" media="(max-width: 800px)">
       <aside class="rover-action-quote-container">
         <div class="rover-action-dash"></div>
         <p class="rover-quote">My Rover sitter sent me updates throughout the day and took care of my dog as if she were her own. <span style="color: gray; padding-bottom: 10px; padding-top: 5px;"> - Corinna F.</span></p>
@@ -116,8 +147,17 @@
       </aside>
     </section>
 
+    <section class="rover-action-shot-mobile" media="(min-width:800px)">
+      <aside class="rover-action-quote-container-mobile">
+        <div class="rover-action-dash-mobile"></div>
+        <p class="rover-quote-mobile">My Rover sitter sent me updates throughout the day and took care of my dog as if she were her own. <span style="color: gray; padding-bottom: 10px; padding-top: 5px;"> - Corinna F.</span></p>
+        <p>We’re The Dog People. <a href="#">Learn More</a></p>
+      </aside>
+      <div class="rover-action-bannerbelow-mobile"></div>
+    </section>
+
     <!--Rover 1-2-3-->
-    <section class="rover-123-container">
+    <section class="rover-123-container" media="(max-width:800px)">
       <h2 class="rover-123-container-title">We’re the treat-your-dog-like-family dog people</h2>
       <div class="rover-123-item-container">
         <div class="rover-123-item">
@@ -138,8 +178,48 @@
       </div>
     </section>
 
-  </main>
-  <script src="js/main.js"></script>
-</body>
+    <section class="rover-123-container-mobile" media="(min-width:800px)">
+      <h2 class="rover-123-container-title-mobile">We’re the treat-your-dog-like-family dog people</h2>
+      <div class="rover-123-item-container-mobile">
+        <div class="rover-123-item-mobile">
+          <img src="img/watchglass.png" alt="search">
+          <div class="rover-123-item-words-mobile">
+          <h3>Search</h3>
+          <p>Read verified reviews and pick the perfect sitter.</p>
+        </div>
+        </div>
+        <div class="rover-123-item-mobile">
+          <img src="img/phone.png" alt="phone">
+          <div class="rover-123-item-words-mobile">
+          <h3>Book & pay on Rover</h3>
+          <p>Book and pay securely through the website or app.</p>
+        </div>
+        </div>
+        <div class="rover-123-item-mobile">
+          <img src="img/shield.png" alt="shield">
+          <div class="rover-123-item-words-mobile">
+          <h3>Relax</h3>
+          <p>Get the Rover Guarantee, 24/7 support, and reservation protection.</p>
+        </div>
+        </div>
+      </div>
+    </section>
 
+  </main>
+  <script>
+
+   document.querySelector("rover-header-right-mobile").addEventListener("click", function(){
+       document.querySelector("#mobile_menu").classList.add("show")
+   })
+
+   document.querySelector("#close").addEventListener("click", function(){
+       // document.querySelector("#mobile_menu").classList.remove("show")
+       document.querySelector("#mobile_menu").classList.add("hide")
+   }
+   
+   )
+
+  </script>
+</body>
 </html>
+
