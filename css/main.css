@@ -49,6 +49,7 @@ li a {
     
   }
 
+
 .rover-hero-container{
     background-image: url("../img/hero.jpg");
     background-size: cover;
@@ -103,18 +104,24 @@ li a {
 }
 
 .rover-cta-box{
-  position: relative;
-  padding-bottom: 500px;
+  padding-bottom: 100px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
 
+.rover-two-boxes-container{
+  display: flex;
+  height: 500px;
+  justify-content: space-around;
 }
 .rover-cta-container{
-  position: absolute;
-  right: 90px;
-  top: -450px;
+  margin-left: 40px;
   color: black;
   width: 500px;
-  border-style: solid;
+  border-style: groove;
   border-color: #cfd7de;
+  justify-content: flex-end;
 }
 
 .rover-cta-header{
@@ -177,11 +184,8 @@ color: #14a96d ;
 .rover-protections{
   width: 500px;
   text-align: center;
-  position: absolute;
-  right: 90px;
-  bottom: 600px;
   color: #66727c;
-  word-spacing: 2px;
+  
 
 }
 
@@ -189,13 +193,15 @@ color: #14a96d ;
   color: #06748a;
   text-decoration: none;
   letter-spacing: 1px;
+  
 }
 
 .rover-action-shot{
   background-image: url("../img/banner_below.jpg");
   height: 600px;
-  margin: 120px 50px;
+  margin: 200px 50px;
   background-size: cover;
+
 }
 
 .rover-action-quote-container{
@@ -204,10 +210,10 @@ color: #14a96d ;
   background-color: white;
   color: black;
   position: absolute;
-  border-style:solid;
+  border-style: groove;
   border-color:#cfd7de;
   left: 200px;
-  top: 1450px;
+  top: 1550px;
 }
 
 .rover-action-quote-container p{
@@ -235,6 +241,7 @@ margin: 30px 20px;
   font-size: 40px;
   font-weight: bold;
   padding-bottom: 70px;
+  padding-top: 30px;
 }
 
 .rover-123-item-container{
@@ -268,7 +275,7 @@ margin: 30px 20px;
   position: absolute;
   top: 10px;
   right: 20px;
-  background-color: black;
+  
   width: 40px;
 }
 
@@ -280,6 +287,223 @@ margin: 30px 20px;
 .rover-button rover-cta-mobile{
   background-color: #14a96d;
 }
+
+.rover-cta-box-mobile{
+  margin-top: 200px;
+  margin-left: 0%;
+  margin-right: 0%;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.rover-cta-container-mobile{
+  margin: 20px 40px;
+  color: black;
+  width: 700px;
+  border-style: groove;
+  border-color: #cfd7de;
+}
+
+.rover-cta-header-mobile{
+  background-color: #f4f5f6;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.rover-cta-mobile a{
+  text-decoration: none;
+  color: white;
+
+
+}
+
+.rover-cta-header-mobile img{
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 50px;
+} 
+
+.rover-cta-header-mobile p{
+position: absolute;
+left: 90px;
+top: 15px;
+} 
+
+.rover-facts-mobile{
+  list-style: none;
+  height: 120px;
+}
+
+.rover-facts-mobile li{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  
+}
+
+.rover-facts-mobile li::before{
+content: '✓';
+margin-left: -30px;
+padding-right:10px ;
+color: #14a96d ;
+  
+}
+
+.rover-cta-mobile{
+  margin-bottom: 10px;
+  margin-left: 20px;
+  background-color: #14a96d ;
+  height: 30px;
+  width: 650px;
+  border-radius: 3%;
+  color: white;
+  padding-top: 7px;
+  font-size: 15px;
+  text-align: center;
+
+}
+
+.rover-protections-mobile{
+  width: 500px;
+  text-align: center;
+  color: #66727c;
+  
+
+}
+
+.rover-protections-mobile a{
+  color: #06748a;
+  text-decoration: none;
+  letter-spacing: 1px;
+  
+}
+
+.rover-action-shot-mobile{
+  height: 600px;
+  margin: 200px 10px;
+
+}
+.rover-action-bannerbelow-mobile{
+  background-image: url("../img/banner_below.jpg");
+  height: 500px;
+  width: 758px;
+  margin: 0%;
+  background-position: 1450px 650px;
+  margin-left: -10px;
+}
+
+
+.rover-action-quote-container-mobile{
+  width: 700px;
+  margin: 50px 0px;
+  height: 250px;
+  background-color: white;
+  color: black;
+  border-top-style: groove;
+  border-bottom-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-color:#cfd7de;
+}
+
+.rover-action-quote-container-mobile p{
+word-spacing: 2px;
+margin: 30px 20px;
+}
+
+.rover-quote-mobile{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.rover-action-quote-container-mobile p:last-child{
+ color: darkslategray;
+ 
+}
+
+.rover-action-quote-container-mobile a{
+  text-decoration: none;
+  color: #06748a;
+ }
+
+ 
+.rover-123-container-title-mobile{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 70px;
+  padding-top: 30px;
+  
+}
+
+.rover-123-item-container-mobile{
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+}
+
+.rover-123-item-mobile{
+  display: flex;
+  flex-direction: row;
+}
+
+.rover-123-item-words-mobile{
+ display: flex;
+ flex-direction: column;
+}
+
+
+.rover-123-item-mobile img{
+  width: 100px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  margin-left: 10px;
+}
+
+.rover-123-item-words-mobile p{
+  color: gray;
+  padding-bottom: 20px;
+
+}
+
+#mobile_menu{
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  display: none;
+
+}
+.show{
+  /*!important overrides all*/
+  display: block !important;
+  animation: showmenu .35s ease-in-out;
+}
+
+.hide{
+  /*!important overrides all*/
+  /*display: block !important;*/
+  animation: hidemenu .35s ease-in-out;
+}
+.nflex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nflex a{
+  color: white
+}
+
 
 /* Use a media query to add a break point at 800px: */
 @media screen and (min-width: 800px) {
@@ -294,19 +518,71 @@ margin: 30px 20px;
   .container-upper-mobile{
     display: none;
   }
+  .rover-cta-box-mobile{
+    display: none;
+  }
+  .rover-action-shot-mobile{
+    display: none;
+  }
+  .rover-123-container-mobile{
+    display: none;
+  }
+
+  
 
 
   .left, .main, .right {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }}
 
-
-
   @media screen and (max-width: 800px) {
 
     .rover-hero-container{
       display: none;
     }
+
+    .rover-cta-box{
+      display: none;
+    }
+
+    .rover-action-shot{
+      display: none;
+    }
+    .rover-123-container{
+      display: none;
+    }
+
+    .rover-header-left{
+      display: none;
+    }
+
+    #signup, #signin, #help{
+      display: none;
+    }
+
     .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }}
+
+  @keyframes showmenu {
+      0%{
+          transform: translateX(100%);
+      }
+  
+      100%{
+          transform: translateX(0%);
+      }
+  }
+  
+  /*rotate(90deg)  */
+  @keyframes hidemenu {
+      0%{
+          transform: translateX(0%);
+      }
+  
+      100%{
+          transform: translateX(100%);
+      }
+  }
+ 
+ 
